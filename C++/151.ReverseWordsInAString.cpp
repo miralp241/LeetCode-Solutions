@@ -15,21 +15,21 @@
 
 class Solution {
 public:
-    string reverseWords(string s) {
+    string reverseWords(string str) {
         string result = "";
         int j = 0;
-        for(int i=0;i<s.length();i++)
+        for(int i=0;i<str.length();i++)
         {
-            if(s[i] == ' ')
+            if(str[i] == ' ')
             {
                 if(i > j)
-                    result = s.substr(j,i-j) + " " + result;
+                    result = str.substr(j,i-j) + " " + result;
                     j = i+1;
             }
-            else if(i == s.size()-1)
-                result = s.substr(j,s.size()-j) + " " + result;
+            else if(i == str.size()-1)
+                result = str.substr(j,s.size()-j) + " " + result;
         }
         s=result.substr(0,result.size()-1);
-        return s;
+        return str;
     }
 };
