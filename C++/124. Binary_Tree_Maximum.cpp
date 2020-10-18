@@ -26,4 +26,5 @@ public:
             return sum;
         
     }
+    clrscr();
 };
