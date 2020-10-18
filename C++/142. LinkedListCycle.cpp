@@ -35,7 +35,8 @@ class Solution
 	        	fast=fast->next->next;
 	        	if(slow==fast)
 			{
-	            	   flag=0;break;
+	            	   flag=0;
+			   break;
 	        	}
 		}
 	        if(!flag)
@@ -53,4 +54,5 @@ class Solution
 	            return NULL;
 	        }
     	}
+	return NULL;
 };
